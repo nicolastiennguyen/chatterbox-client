@@ -20,16 +20,16 @@ var MessagesView = {
     // TODO: Render _all_ the messages
     // put chat to the dom and clear the body
     MessagesView.$chats.html('');
-    var html = '';
+    // var html = '';
     for (const i of Messages['_data']) {
-      html += MessagesView.renderMessage(i);
+      MessagesView.renderMessage(i);
     }
   },
 
   renderMessage: function(message) {
-    //Takes in a message
-    //Calls render and parse specific data we want
-    //Appends to $chats
+    // Takes in a message
+    // Calls render and parse specific data we want
+    // Appends to $chats
     var $message = MessageView.render(message);
     MessagesView.$chats.append($message);
 
