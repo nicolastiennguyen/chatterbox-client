@@ -13,6 +13,12 @@ var RoomsView = {
 
   render: function() {
     // TODO: Render out the list of rooms.
+    RoomsView.$select.html('');
+    var html = '';
+    for (const i of Rooms['_data']) {
+      // html += MessagesView.renderMessage(i);
+      console.log(Rooms['_data'][i]);
+    }
   },
 
   renderRoom: function(roomname) {

@@ -30,6 +30,9 @@ var App = {
       // examine the response from the server request:
       console.log(data);
       Messages.getData(data);
+      MessagesView.render();
+      Rooms.getData(data);
+      RoomsView.render();
       callback();
       // Messages.data = data;
       // TODO: Use the data to update Messages and Rooms

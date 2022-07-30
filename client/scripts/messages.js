@@ -17,16 +17,16 @@ var Messages = {
   // so to retrieve a message it might look something like:
 
   getData: function(data) {
-    console.log(data);
-    for ( i = 0; i < data.length; i++) {
-      console.log(data);
-      if (Messages._data[data[i].message_id] === undefined) {
-        Messages._data[data[i].message_id] = data[i].message_id;
-      }
-    }
+    // for ( i = 0; i < data.length; i++) {
+    //   if (Messages._data[data[i].message_id] === undefined) {
+    //     Messages._data[data[i].message_id] = data[i].message_id;
+    //   }
+    // }
+    // console.log(Messages._data);
+    Messages._data = data;
   }
 
-
+  //Call Messages.view
 
 
   // reference below using message_id:
