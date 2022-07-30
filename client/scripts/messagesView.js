@@ -8,6 +8,7 @@ var MessagesView = {
   initialize: function() {
     // TODO: Perform any work which needs to be done
     // when this view loads.
+    // Messages.getData();
   },
 
   render: function() {
@@ -16,6 +17,7 @@ var MessagesView = {
 
   renderMessage: function(message) {
     // TODO: Render a single message.
+    // use message_id here?
   },
 
   handleClick: function(event) {
